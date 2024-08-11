@@ -1,66 +1,35 @@
 {
-  description = "A devShell example";
-
   inputs = {
-    nixpkgs.url      = "github:NixOS/nixpkgs/nixos-unstable";
-    rust-overlay.url = "github:oxalica/rust-overlay";
-    flake-utils.url  = "github:numtide/flake-utils";
     cargo2nix.url = "github:cargo2nix/cargo2nix/release-0.11.0";
+    flake-utils.follows = "cargo2nix/flake-utils";
+    nixpkgs.follows = "cargo2nix/nixpkgs";
   };
 
-  outputs = { self, nixpkgs, rust-overlay, flake-utils, ... }:
+  outputs = inputs: with inputs;
     flake-utils.lib.eachDefaultSystem (system:
       let
-        name = "omgmt_order_service";
-        src = ./.;
-        overlays = [ (import rust-overlay) ];
         pkgs = import nixpkgs {
-          inherit system overlays;
+          inherit system;
+          overlays = [cargo2nix.overlays.default];
         };
-      in
-      {
-        packages.default = 
-          let
-            version = "0.0.1a";
-            inherit (pkgs) stdenv lib;
-          in
-          stdenv.mkDerivation {
 
-            buildInputs = with pkgs; [
-              openssl
-              pkg-config
-              eza
-              fd
-              rustup
-              cargo
+        rustPkgs = pkgs.rustBuilder.makePackageSet {
+            rustChannel = "nightly";
+            packageFun = import ./Cargo.nix;
+        };
+
+      in rec {
+        packages = {
+          # replace hello-world with your package name
+          order-service = (rustPkgs.workspace.order-service {});
+          default = packages.order-service;
+        };
+
+        devShell = (rustPkgs.workspaceShell {
+            packages = [
+                pkgs.httpie
             ];
-            name = "omgmt-order-service-${version}";
-            src = ./.;
-            dontUnpack = true;
-            sourceRoot = ".";
-
-            buildPhase = ''
-              export RUSTUP_HOME=./.rustup
-              rustup override set nightly
-              cargo build
-            '';
-          };
-        devShells.default = with pkgs; mkShell {
-          buildInputs = [
-            openssl
-            pkg-config
-            eza
-            fd
-            rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {
-              extensions = [ "rust-src" ];
-            })
-          ];
-
-          shellHook = ''
-            alias ls=eza
-            alias find=fd
-          '';
-        };
+        });
       }
     );
 }
