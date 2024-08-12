@@ -1,0 +1,20 @@
+/home/wcleg4/repo/omgmt-mono/order-service/target/debug/deps/libsnap-24c4ee5040a702cc.rmeta: /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/lib.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/bytes.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/compress.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/crc32.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/crc32_table.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/decompress.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/error.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/frame.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/raw.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/read.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/tag.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/write.rs /home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out/crc32_table.rs /home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out/tag.rs
+
+/home/wcleg4/repo/omgmt-mono/order-service/target/debug/deps/snap-24c4ee5040a702cc.d: /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/lib.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/bytes.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/compress.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/crc32.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/crc32_table.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/decompress.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/error.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/frame.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/raw.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/read.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/tag.rs /home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/write.rs /home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out/crc32_table.rs /home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out/tag.rs
+
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/lib.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/bytes.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/compress.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/crc32.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/crc32_table.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/decompress.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/error.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/frame.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/raw.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/read.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/tag.rs:
+/home/wcleg4/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snap-1.1.1/src/write.rs:
+/home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out/crc32_table.rs:
+/home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out/tag.rs:
+
+# env-dep:OUT_DIR=/home/wcleg4/repo/omgmt-mono/order-service/target/debug/build/snap-32ebb42fbafd3829/out
